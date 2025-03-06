@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://dylk8mhjbq20f"]
+
+[ext_resource type="Script" path="res://scenes/spawner.gd" id="1_fsh6f"]
+[ext_resource type="PackedScene" uid="uid://bkt51uers1yt" path="res://scenes/Fish.tscn" id="2_7k7n3"]
+
+[node name="Spawner" type="Node2D"]
+script = ExtResource("1_fsh6f")
+obstacle = ExtResource("2_7k7n3")
