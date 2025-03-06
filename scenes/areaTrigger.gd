@@ -2,6 +2,7 @@ extends Area2D
 
 @export var change_scene_to: String = "Level1"
 
+
 func _on_body_entered(body: Node2D) -> void:
 	if body.get_name() == "Player":
 		get_tree().change_scene_to_file(str("res://scenes/" + change_scene_to + ".tscn"))

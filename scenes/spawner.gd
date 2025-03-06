@@ -1,13 +1,15 @@
 extends Node2D
 
-@export var obstacle : PackedScene
-@export var spawnRange : float = 0
-@export var minInterval : float = 1
-@export var maxInterval : float = 1
+@export var obstacle: PackedScene
+@export var spawnRange: float = 0
+@export var minInterval: float = 1
+@export var maxInterval: float = 1
 var rng = RandomNumberGenerator.new()
+
 
 func _ready():
 	repeat()
+
 
 func spawn():
 	var spawned = obstacle.instantiate()
@@ -17,6 +19,7 @@ func spawn():
 	spawn_pos.x = spawn_pos.x + randf_range(-spawnRange, spawnRange)
 
 	spawned.global_position = spawn_pos
+
 
 func repeat():
 	spawn()
