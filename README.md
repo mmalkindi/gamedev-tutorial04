@@ -22,7 +22,7 @@ Untuk polishing, saya melakukan:
 - Mengubah logic `Spawner` sehingga bisa dikostumasi `range` dan `interval`nya
 - Memberi variabel tambahan untuk scene `Spawner` sehingga bisa dikostumasi untuk tiap instance:
   - `obstacle`: scene yang akan diinstansiasi (spawn)
-  - `spawnRange`: deviasi range spawn horizontal yang dapat dipilih secara random
-  - `minInterval`: interval minimum antar kejadian objek spawn secara random
-  - `maxInterval`: interval maksimum antar kejadian objek di spawn secara random
+  - `spawn_range`: deviasi range spawn horizontal yang dapat dipilih secara random
+  - `min_interval`: interval minimum antar kejadian objek spawn secara random
+  - `max_interval`: interval maksimum antar kejadian objek di spawn secara random
 - Menambahkan opsi untuk restart dari level 1 dengan klik tombol kiri mouse di LoseScreen
