@@ -1,10 +1,9 @@
 extends Node2D
 
 @export var obstacle: PackedScene
-@export var spawnRange: float = 0
-@export var minInterval: float = 1
-@export var maxInterval: float = 1
-var rng = RandomNumberGenerator.new()
+@export var spawn_range: float = 0
+@export var min_interval: float = 1
+@export var max_interval: float = 1
 
 
 func _ready():
@@ -16,12 +15,12 @@ func spawn():
 	get_parent().add_child.call_deferred(spawned)
 
 	var spawn_pos = global_position
-	spawn_pos.x = spawn_pos.x + randf_range(-spawnRange, spawnRange)
+	spawn_pos.x = spawn_pos.x + randf_range(-spawn_range, spawn_range)
 
 	spawned.global_position = spawn_pos
 
 
 func repeat():
 	spawn()
-	await get_tree().create_timer(rng.randf_range(minInterval, maxInterval)).timeout
+	await get_tree().create_timer(randf_range(min_interval, max_interval)).timeout
 	repeat()
