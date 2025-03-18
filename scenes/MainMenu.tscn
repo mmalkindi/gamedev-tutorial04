@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=3 uid="uid://ihegfcrsepfs"]
+
+[ext_resource type="Texture2D" uid="uid://c3j8bvdstx7br" path="res://icon.png" id="1_8xa3x"]
+[ext_resource type="FontFile" uid="uid://cr58npurleypg" path="res://assets/fonts/Boldonse-Regular.ttf" id="1_d6vwa"]
+[ext_resource type="FontFile" uid="uid://dtody5lnjfc7c" path="res://assets/fonts/Exo2-VariableFont_wght.ttf" id="2_173sn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_x0sep"]
+font_size = 64
+font_color = Color(0.569076, 0.774828, 0.920805, 1)
+
+[node name="MainMenu" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_d6vwa")
+text = "JUDUL
+"
+label_settings = SubResource("LabelSettings_x0sep")
+
+[node name="LinkButton" type="LinkButton" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(2.98411e-06, 0.763308, 0.521679, 1)
+theme_override_fonts/font = ExtResource("2_173sn")
+theme_override_font_sizes/font_size = 24
+text = "NEW GAME"
+underline = 2
+
+[node name="LinkButton2" type="LinkButton" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.746042, 0.695682, 1)
+theme_override_fonts/font = ExtResource("2_173sn")
+theme_override_font_sizes/font_size = 24
+text = "STAGE SELECT"
+underline = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture = ExtResource("1_8xa3x")
+stretch_mode = 4
