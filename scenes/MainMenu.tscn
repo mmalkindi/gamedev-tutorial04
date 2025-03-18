@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://ihegfcrsepfs"]
+[gd_scene load_steps=6 format=3 uid="uid://ihegfcrsepfs"]
 
 [ext_resource type="Texture2D" uid="uid://c3j8bvdstx7br" path="res://icon.png" id="1_8xa3x"]
 [ext_resource type="FontFile" uid="uid://cr58npurleypg" path="res://assets/fonts/Boldonse-Regular.ttf" id="1_d6vwa"]
 [ext_resource type="FontFile" uid="uid://dtody5lnjfc7c" path="res://assets/fonts/Exo2-VariableFont_wght.ttf" id="2_173sn"]
+[ext_resource type="Script" path="res://scenes/link_button.gd" id="3_m67kx"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_x0sep"]
 font_size = 64
@@ -40,6 +41,8 @@ theme_override_fonts/font = ExtResource("2_173sn")
 theme_override_font_sizes/font_size = 24
 text = "NEW GAME"
 underline = 2
+script = ExtResource("3_m67kx")
+scene_to_load = "Level1"
 
 [node name="LinkButton2" type="LinkButton" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
