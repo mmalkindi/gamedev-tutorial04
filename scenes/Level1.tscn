@@ -78,7 +78,6 @@ position = Vector2(637, 128)
 
 [node name="Spawner3" parent="." instance=ExtResource("5_021su")]
 position = Vector2(893, -37)
-spawnRange = 1000.0
 
 [node name="Star" type="Sprite2D" parent="."]
 z_index = 1

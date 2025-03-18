@@ -86,29 +86,22 @@ change_scene_to = "WinScreen"
 [node name="Spawner" parent="." instance=ExtResource("5_428pt")]
 position = Vector2(323, 82)
 obstacle = ExtResource("6_fppow")
-maxInterval = 3.0
 
 [node name="Spawner2" parent="." instance=ExtResource("5_428pt")]
 position = Vector2(907, -25)
 obstacle = ExtResource("6_fppow")
-maxInterval = 4.0
 
 [node name="Spawner3" parent="." instance=ExtResource("5_428pt")]
 position = Vector2(1363, -25)
 obstacle = ExtResource("6_fppow")
-minInterval = 0.5
-maxInterval = 3.0
 
 [node name="Spawner4" parent="." instance=ExtResource("5_428pt")]
 position = Vector2(1803, -25)
 obstacle = ExtResource("6_fppow")
-minInterval = 0.5
 
 [node name="Spawner5" parent="." instance=ExtResource("5_428pt")]
 position = Vector2(1000, -37)
 obstacle = ExtResource("6_fppow")
-spawnRange = 1000.0
-maxInterval = 3.0
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(-1, -324)
