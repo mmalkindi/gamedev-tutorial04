@@ -1,6 +1,17 @@
-# Tutorial 4 - Basic 2D Level Design
+# Tutorial 4 & 6
 
-## Proses Pengerjaan: Level Baru
+| Index |
+| --- |
+| [Tutorial 4](#tutorial-4---basic-2d-level-design) |
+| [Tutorial 6](#tutorial-6---menu--in-game-gui) |
+
+## Tutorial 6 - Menu & In-Game GUI
+
+TODO
+
+## Tutorial 4 - Basic 2D Level Design
+
+### Proses Pengerjaan: Level Baru
 
 Pertama saya membuat `Level2` (hasil duplikat dari `Level1`) dan mengganti `TileSet` menggunakan spritesheet bertema pasir.
 `TileSet` yang baru tersebut dikonfigurasi paint physics layernya, dan kemudian menghapus Paint TileMap yang lama dengan painting TileMap baru.
@@ -9,7 +20,7 @@ Setelah selesai menggambar layout level, saya mengubah lokasi "Star" atau objekt
 Untuk rintangan baru, saya membuat scene `Bee` (duplikat dari `Fish`) dan mengubah spritenya menjadi lebah.
 Kemudian saya meletakkan Spawner di level baru dan mengubah `Obstacle` menjadi scene `Bee` tersebut.
 
-## Proses Pengerjaan: Polishing
+### Proses Pengerjaan: Polishing
 
 Untuk polishing, saya melakukan:
 
