@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=4 uid="uid://yqmk0vpvnyxr"]
+[gd_scene load_steps=10 format=4 uid="uid://yqmk0vpvnyxr"]
 
 [ext_resource type="PackedScene" uid="uid://bc2fujtl13g10" path="res://scenes/Player.tscn" id="1"]
 [ext_resource type="Texture2D" uid="uid://cluh2ekc38ktx" path="res://assets/kenney_platformerpack/Spritesheets/spritesheet_gr_dirt.png" id="2_imf5l"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dylk8mhjbq20f" path="res://scenes/Spawner.tscn" id="5_021su"]
 [ext_resource type="Texture2D" uid="uid://bfpt4n245ef1h" path="res://assets/kenney_platformerpack/PNG/Items/star.png" id="5_a7i33"]
 [ext_resource type="Texture2D" uid="uid://c77q7xa825ok" path="res://assets/kenney_platformerpack/PNG/Backgrounds/blue_shroom.png" id="6_gpxbc"]
+[ext_resource type="PackedScene" uid="uid://c8i34u4txag5j" path="res://scenes/Life Counter.tscn" id="7_k2yg7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bb3di"]
 resource_name = "Dirt"
@@ -97,3 +98,7 @@ centered = false
 position = Vector2(1024, -193)
 texture = ExtResource("6_gpxbc")
 centered = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="GUI" parent="CanvasLayer" instance=ExtResource("7_k2yg7")]
