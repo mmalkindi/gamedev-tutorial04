@@ -9,7 +9,7 @@ func _on_body_entered(body: Node2D) -> void:
 		if current_scene == change_scene_to:
 			Global.lives -= 1
 		if Global.lives == 0:
-			pass
+			get_tree().call_deferred("change_scene_to_file", str("res://scenes/Game Over.tscn"))
 		else:
 			get_tree().call_deferred(
 				"change_scene_to_file", str("res://scenes/" + change_scene_to + ".tscn")
