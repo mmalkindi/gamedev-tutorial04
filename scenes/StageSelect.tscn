@@ -1,12 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://clmxga0io6pm"]
+[gd_scene load_steps=6 format=3 uid="uid://clmxga0io6pm"]
 
 [ext_resource type="FontFile" uid="uid://cr58npurleypg" path="res://assets/fonts/Boldonse-Regular.ttf" id="1_066q0"]
 [ext_resource type="Script" path="res://scenes/stage_select.gd" id="1_gj8kg"]
 [ext_resource type="FontFile" uid="uid://dtody5lnjfc7c" path="res://assets/fonts/Exo2-VariableFont_wght.ttf" id="2_darxu"]
+[ext_resource type="Texture2D" uid="uid://cvuv75kt8mvxt" path="res://assets/kenney_platformerpack/PNG/Backgrounds/blue_desert.png" id="2_doc5m"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_x0sep"]
 font_size = 64
-font_color = Color(0.569076, 0.774828, 0.920805, 1)
+font_color = Color(0.266667, 0.788235, 0.913725, 1)
 
 [node name="StageSelect" type="MarginContainer"]
 anchors_preset = 15
@@ -16,7 +17,13 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_gj8kg")
 
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("2_doc5m")
+expand_mode = 2
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
+z_index = 1
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
