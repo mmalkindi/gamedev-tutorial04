@@ -5,12 +5,22 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_ar08o"]
 font_size = 36
+shadow_size = 6
+shadow_color = Color(0.295866, 0.295867, 0.295866, 1)
+shadow_offset = Vector2(2, 2)
 
-[node name="GUI" type="MarginContainer"]
+[node name="LifeCounter" type="MarginContainer"]
+theme_override_constants/margin_left = 36
+theme_override_constants/margin_top = 36
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/shadow_outline_size = 20
 theme_override_fonts/font = ExtResource("1_vwcrs")
+theme_override_font_sizes/font_size = 24
 text = "Lives : 1"
 label_settings = SubResource("LabelSettings_ar08o")
 script = ExtResource("1_sdku6")
