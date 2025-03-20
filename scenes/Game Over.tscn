@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cpaot78d7k7fk"]
+[gd_scene load_steps=5 format=3 uid="uid://cpaot78d7k7fk"]
 
 [ext_resource type="FontFile" uid="uid://cr58npurleypg" path="res://assets/fonts/Boldonse-Regular.ttf" id="1_766wx"]
+[ext_resource type="FontFile" uid="uid://dtody5lnjfc7c" path="res://assets/fonts/Exo2-VariableFont_wght.ttf" id="2_i8ddi"]
+[ext_resource type="Script" path="res://scenes/gameover_return_to_main.gd" id="3_t4x62"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_bnw4g"]
 font = ExtResource("1_766wx")
@@ -29,3 +31,20 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "GAME OVER"
 label_settings = SubResource("LabelSettings_bnw4g")
+
+[node name="ReturnToMain" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.424913
+anchor_top = 0.62963
+anchor_right = 0.575087
+anchor_bottom = 0.677469
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_i8ddi")
+theme_override_font_sizes/font_size = 24
+text = "Return to Main Menu
+"
+flat = true
+script = ExtResource("3_t4x62")
+metadata/_edit_use_anchors_ = true
