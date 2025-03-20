@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bkt51uers1yt"]
 
 [ext_resource type="Texture2D" uid="uid://bivk5n8i3vnqc" path="res://assets/kenney_platformerpack/PNG/Enemies/fishBlue.png" id="1_8fag6"]
-[ext_resource type="Script" path="res://scenes/fish.gd" id="1_lp7ws"]
+[ext_resource type="Script" path="res://scenes/level/entities/fish.gd" id="1_lp7ws"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wjkbo"]
 radius = 21.0
@@ -11,7 +11,7 @@ height = 56.0
 contact_monitor = true
 max_contacts_reported = 1
 script = ExtResource("1_lp7ws")
-change_to_scene = "GameOver"
+change_to_scene = "menu/GameOver"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_wjkbo")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://ihegfcrsepfs"]
 
-[ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_6ktre"]
+[ext_resource type="Script" path="res://scenes/menu/main_menu.gd" id="1_6ktre"]
 [ext_resource type="FontFile" uid="uid://cr58npurleypg" path="res://assets/fonts/Boldonse-Regular.ttf" id="1_d6vwa"]
 [ext_resource type="FontFile" uid="uid://dtody5lnjfc7c" path="res://assets/fonts/Exo2-VariableFont_wght.ttf" id="2_173sn"]
 [ext_resource type="Texture2D" uid="uid://bpomp7laf2qmf" path="res://assets/kenney_platformerpack/PNG/Enemies/fishBlue_dead.png" id="5_ven54"]
@@ -73,5 +73,5 @@ size_flags_vertical = 0
 texture = ExtResource("5_ven54")
 stretch_mode = 4
 
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/NewGame" to="." method="_on_menubutton_pressed" binds= ["Level1"]]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/StageSelect" to="." method="_on_menubutton_pressed" binds= ["StageSelect"]]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/NewGame" to="." method="_on_menubutton_pressed" binds= ["level/Level1"]]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/StageSelect" to="." method="_on_menubutton_pressed" binds= ["menu/StageSelect"]]

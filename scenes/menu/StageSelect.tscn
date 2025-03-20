@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://clmxga0io6pm"]
 
 [ext_resource type="FontFile" uid="uid://cr58npurleypg" path="res://assets/fonts/Boldonse-Regular.ttf" id="1_066q0"]
-[ext_resource type="Script" path="res://scenes/stage_select.gd" id="1_gj8kg"]
+[ext_resource type="Script" path="res://scenes/menu/stage_select.gd" id="1_gj8kg"]
 [ext_resource type="FontFile" uid="uid://dtody5lnjfc7c" path="res://assets/fonts/Exo2-VariableFont_wght.ttf" id="2_darxu"]
 [ext_resource type="Texture2D" uid="uid://cvuv75kt8mvxt" path="res://assets/kenney_platformerpack/PNG/Backgrounds/blue_desert.png" id="2_doc5m"]
 
@@ -58,5 +58,5 @@ theme_override_font_sizes/font_size = 24
 text = "Stage 2"
 underline = 2
 
-[connection signal="pressed" from="VBoxContainer/VBoxContainer/Stage1" to="." method="_on_stage_pressed" binds= ["Level1"]]
-[connection signal="pressed" from="VBoxContainer/VBoxContainer/Stage2" to="." method="_on_stage_pressed" binds= ["Level2"]]
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/Stage1" to="." method="_on_stage_pressed" binds= ["level/Level1"]]
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/Stage2" to="." method="_on_stage_pressed" binds= ["level/Level2"]]

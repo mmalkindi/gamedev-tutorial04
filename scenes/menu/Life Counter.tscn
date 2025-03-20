@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c8i34u4txag5j"]
 
-[ext_resource type="Script" path="res://scenes/life_counter.gd" id="1_sdku6"]
+[ext_resource type="Script" path="res://scenes/menu/life_counter.gd" id="1_sdku6"]
 [ext_resource type="FontFile" uid="uid://dtody5lnjfc7c" path="res://assets/fonts/Exo2-VariableFont_wght.ttf" id="1_vwcrs"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ar08o"]
