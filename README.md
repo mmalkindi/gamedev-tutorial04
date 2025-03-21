@@ -7,9 +7,36 @@
 
 ## Tutorial 6 - Menu & In-Game GUI
 
-TODO
+### Proses Pengerjaan: Latihan Mandiri
+
+Setelah mengikuti Latihan Membuat Menu Utama, Clickable Menu, Membuat GUI Life Counter, dan Membuat Layar Game Over,
+saya mengerjakan Latihan Mandiri Fitur Tambahan.
+
+Pertama, saya implementasi Tombol pada layar game over untuk kembali ke menu utama menggunakan
+Button (bukan LinkButton). Sebenarnya tidak berbeda jauh, namun saya rasa Button lebih cocok dibanding LinkButton.
+Button tersebut dihubungkan dengan script untuk mengubah scene ke `MainMenu.tscn`
+
+Kemudian, saya implementasi Fitur Select Stage.
+Disini saya menggunakan **Signals**, sehingga hanya perlu 1 script `stage_select.gd` untuk kedua tombol yang ada .
+Saya juga mengubah MainMenu untuk menggunakan sistem Signals, sehingga ada 1 script `main_menu.gd` untuk tombol "New Game" dan "Stage Select"
+
+### Polishing Tutorial 06
+
+Untuk polishing, saya melakukan:
+
+- Menggunakan Signals untuk handling event `_on_pressed()` tombol-tombol di Main Menu dan Stage Select
+- Menambahkan background image di MainMenu dan StageSelect
+- Menambahkan outline di Life Counter sehingga ada kontras dengan latar belakang level
+- Mengubah enemy (`Fish`) sehingga menggunakan scene GameOver baru apabila player menyentuhnya
+- Merapihkan struktur proyek
+  - Scenes memiliki folder `level`, `entities` dan `menu`
+  - `level` menyimpan `entities` dan scene Level1 dan Level2
+  - `entities` menyimpan semua entitas yang ada di game (fish, player, etc)
+  - `menu` menyimpan semua scene UI di game (MainMenu, GameOver, StageSelect, etc)
 
 ## Tutorial 4 - Basic 2D Level Design
+
+Final Commit: `aecf1fa`
 
 ### Proses Pengerjaan: Level Baru
 
@@ -20,7 +47,7 @@ Setelah selesai menggambar layout level, saya mengubah lokasi "Star" atau objekt
 Untuk rintangan baru, saya membuat scene `Bee` (duplikat dari `Fish`) dan mengubah spritenya menjadi lebah.
 Kemudian saya meletakkan Spawner di level baru dan mengubah `Obstacle` menjadi scene `Bee` tersebut.
 
-### Proses Pengerjaan: Polishing
+### Polishing Tutorial 04
 
 Untuk polishing, saya melakukan:
 
