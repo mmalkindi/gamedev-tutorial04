@@ -4,6 +4,8 @@ extends CharacterBody2D
 @export var gravity: int = 1200
 @export var jump_speed: int = -400
 
+@onready var particle = $GPUParticles2D
+
 
 func get_input():
 	velocity.x = 0
@@ -11,8 +13,15 @@ func get_input():
 		velocity.y = jump_speed
 	if Input.is_action_pressed("right"):
 		velocity.x += speed
-	if Input.is_action_pressed("left"):
+		if is_on_floor():
+			particle.set_emitting(true)
+	elif Input.is_action_pressed("left"):
 		velocity.x -= speed
+		if is_on_floor():
+			particle.set_emitting(true)
+	else:
+		particle.set_emitting(false)
+
 
 
 func _physics_process(delta):
