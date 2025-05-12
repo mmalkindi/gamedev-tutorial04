@@ -27,7 +27,6 @@ func get_input():
 		particle.set_emitting(false)
 
 
-
 func _physics_process(delta):
 	velocity.y += delta * gravity
 	get_input()
