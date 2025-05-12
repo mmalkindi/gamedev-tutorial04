@@ -87,7 +87,7 @@ position = Vector2(954, 128)
 position = Vector2(637, 128)
 
 [node name="Spawner3" parent="." instance=ExtResource("4_rx6t5")]
-position = Vector2(893, -37)
+position = Vector2(289, -37)
 
 [node name="Star" type="Sprite2D" parent="."]
 z_index = 1
