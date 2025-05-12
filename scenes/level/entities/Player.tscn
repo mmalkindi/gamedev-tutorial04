@@ -100,6 +100,7 @@ limit_bottom = 650
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 position = Vector2(0, 30)
+emitting = false
 amount = 4
 process_material = SubResource("ParticleProcessMaterial_itw1c")
 texture = ExtResource("3_1osqw")

@@ -15,10 +15,14 @@ func get_input():
 		velocity.x += speed
 		if is_on_floor():
 			particle.set_emitting(true)
+		else:
+			particle.set_emitting(false)
 	elif Input.is_action_pressed("left"):
 		velocity.x -= speed
 		if is_on_floor():
 			particle.set_emitting(true)
+		else:
+			particle.set_emitting(false)
 	else:
 		particle.set_emitting(false)
 
