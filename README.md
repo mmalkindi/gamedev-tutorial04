@@ -1,9 +1,10 @@
-# Tutorial 4 & 6
+# Tutorial 4 & 6 & 8
 
 | Index |
 | --- |
 | [Tutorial 4](#tutorial-4---basic-2d-level-design) |
 | [Tutorial 6](#tutorial-6---menu--in-game-gui) |
+| [Tutorial 6](#tutorial-8---game-polishing--balancing) |
 
 ## Tutorial 8 - Game Polishing & Balancing
 
@@ -13,11 +14,17 @@ Kedua partikel tersebut saya buat menggunakan `GPUParticles2D`.
 Partikel hujan saya *polish* lebih lanjut untuk tidak menjadi distraksi bagi player dengan mengubah warnanya mengikuti *background*.
 Partikel *trail* Player juga saya ubah supaya hanya muncul saat Player bergerak, dan tidak lagi *emit* saat Player berhenti bergerak.
 
-Kemudian untuk *balancing*, saya mengubah posisi *spawner* Fish di level 1 seperti berikut:
+Kemudian untuk *balancing*, saya mengubah posisi *spawner* Fish di level 1 untuk menghindari *clumping* Fish yang terlalu banyak di satu tempat.
+Dari percobaan saya, *clumping* Fish tersebut dapat membuat game menjadi lebih sulit.
+Berhubung ini adalah level pertama, saya rasa *challenge* yang diberikan harus lebih mudah.
 
-![before](./docs/tutorial8-before.mp4)
+> Before:
 
-![after](./docs/tutorial8-after.mp4)
+<video src="./docs/tutorial8-before.mp4" width="320" height="180" controls></video>
+
+> After:
+
+<video src="./docs/tutorial8-after.mp4" width="320" height="180" controls></video>
 
 ## Tutorial 6 - Menu & In-Game GUI
 
