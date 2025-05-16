@@ -4,7 +4,7 @@
 | --- |
 | [Tutorial 4](#tutorial-4---basic-2d-level-design) |
 | [Tutorial 6](#tutorial-6---menu--in-game-gui) |
-| [Tutorial 6](#tutorial-8---game-polishing--balancing) |
+| [Tutorial 8](#tutorial-8---game-polishing--balancing) |
 
 ## Tutorial 8 - Game Polishing & Balancing
 
