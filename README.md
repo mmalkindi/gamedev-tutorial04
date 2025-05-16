@@ -20,11 +20,13 @@ Berhubung ini adalah level pertama, saya rasa *challenge* yang diberikan harus l
 
 > Before:
 
-<video src="./docs/tutorial8-before.mp4" width="320" height="180" controls></video>
+https://github.com/user-attachments/assets/5c9200bc-763e-4640-8fbe-4703b22f13d7
 
 > After:
 
-<video src="./docs/tutorial8-after.mp4" width="320" height="180" controls></video>
+
+https://github.com/user-attachments/assets/c61183f1-be1e-4041-9139-26f705cebd6c
+
 
 ## Tutorial 6 - Menu & In-Game GUI
 
